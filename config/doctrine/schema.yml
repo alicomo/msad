@@ -1,0 +1,8 @@
+Article:
+  actAs: Timestampable
+  columns:
+    title: {type: string(255), notnull: true }
+    body: {type: string(1000), notnull: true }
+    author: {type: string(255), notnull: true }
+    comments: {type: integer}
+    is_best: {type: boolean, default: false}
